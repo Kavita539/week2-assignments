@@ -1,0 +1,116 @@
+*{
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+}
+
+:root{
+    --primary-color: hsl(246, 55%, 59%);
+    --light-gray: rgb(231, 231, 231);
+    --sb-color: #333333;
+    --primary-txt-color: #9980bb;
+}
+
+.snackbar-type{
+    margin: auto;
+    max-width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    padding: 1rem;
+    border: 1px solid #BACDDB;
+    border-radius: 9px;
+    box-shadow: 3px 2px 5px #d7d8db;
+}
+
+.btn-type{
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 0.8rem;
+    margin: 0.3rem;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+}
+
+.snackbar-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem auto;
+    flex-direction: column;
+}
+
+.snackbar-baseline-container{
+    position: fixed;
+    max-width: 400px;
+    padding: 0.2rem 0.4rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    bottom: 1rem;
+    color: var(--light-gray);
+    background-color: var(--sb-color);
+}
+
+.snackbar-leading-container{
+    position: fixed;
+    max-width: 450px;
+    padding: 0.2rem 0.4rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    bottom: 1rem;
+    left: 1rem;
+    color: var(--light-gray);
+    background-color: var(--sb-color);
+}
+
+.snackbar-stacked-container{
+    position: fixed;
+    max-width: 450px;
+    padding: 0.2rem 0.4rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    bottom: 1rem;
+    color: var(--light-gray);
+    background-color: var(--sb-color);
+    flex-direction: column;
+}
+
+.stacked-item{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.snackbar-txt{
+    font-size: 1rem;
+    padding: 0.4rem;
+}
+
+.snackbar-retry{
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 0.5rem;
+    color: var(--primary-txt-color);
+}
+
+.close-icon{
+    margin: 0.1rem;
+    padding: 0.6rem 0.75rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.hide{
+    display: none;
+}

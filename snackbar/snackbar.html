@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snackbar</title>
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="./snackbar.css">
+</head>
+<body>
+    <h1>Snackbar</h1>
+    <div class="snackbar-type">
+        
+        <button class="btn-type baseline-btn">Baseline</button>
+        <button class="btn-type leading-btn">Leading</button>
+        <button class="btn-type  stacked-btn">Stacked</button>
+    </div>
+    <div class="snackbar-wrapper">
+        <div class="snackbar-baseline-container hide">
+            <div class="snackbar-txt">Can't send photo. Retry in 5 secs</div>
+            <a href="">
+                <div class="snackbar-retry">Retry</div>
+            </a>
+            <div class="close-icon"><i class="fas fa-times"></i></div>
+        </div>
+
+        <div class="snackbar-leading-container hide">
+            <div class="snackbar-txt">Your photo has been archieved</div>
+            <a href="">
+                <div class="snackbar-retry">Undo</div>
+            </a>
+            <div class="close-icon"><i class="fas fa-times"></i></div>
+        </div>
+
+        <div class="snackbar-stacked-container hide">
+            <div class="snackbar-txt">This item already has the label "travel". You can add a new label.</div>
+            <div class="stacked-item">
+                <a href="">
+                    <div class="snackbar-retry">Add a new label</div>
+                </a>
+                <div class="close-icon"><i class="fas fa-times"></i></div>
+            </div> 
+        </div>
+    </div>
+   <script src="./snackbar.js"></script>
+</body>
+</html>
+

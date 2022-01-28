@@ -9,6 +9,15 @@ body{
     background-color: antiquewhite;
 }
 
+.main-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+    justify-items: center;
+    justify-content: center;
+}
 
 .card-wrapper{
     background-color: white;
@@ -24,6 +33,7 @@ body{
     word-wrap: break-word;
     cursor: pointer;
     position: relative;
+    box-shadow: 3px 2px 5px #d7d8db;
 }
 
 .card-img{
@@ -80,7 +90,7 @@ body{
     height: 3rem;
     color: red;
     margin: 1rem;
-    font-size: 0.9rem; 
+    font-size: 1rem; 
     background-color: transparent;
     border: none;
   }
@@ -137,7 +147,14 @@ body{
     justify-content: flex-end;
   }
 
-  .card-with-horizontal-img-txt.card {
+  .card-img .img-last{
+    width: 8rem;
+    height: 6rem;
+    border-top-right-radius: 0;
+  }
+
+  .card-with-horizontal-img-txt .card-img {
+
     flex-direction: row;
     flex-wrap: wrap;
   }
